@@ -1,0 +1,19 @@
+.cardProductos {
+  border: rgb(103, 195, 222) solid 3px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+  margin: 2rem;
+  width: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.imgProducto {
+  height: 150px;
+  width: auto;
+}
+
+h3 {
+  color: rgb(103, 195, 222);
+}

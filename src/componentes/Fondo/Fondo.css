@@ -1,0 +1,39 @@
+.background-image {
+  height: 45vh; /* Fijar la altura de la imagen de fondo al 45% de la altura del viewport */
+  background-image: url("/img/fondo.jpg");
+  background-size: cover; /* Hacer que la imagen de fondo cubra todo el espacio disponible */
+  background-position: center center; /* Centrar la imagen de fondo */
+  position: relative;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(103, 195, 222);
+  opacity: 0.8; /* Establecer la opacidad al 80% (20% de transparencia) */
+  padding: 5px;
+  /* width: max-content; */
+  align-items: center; /* Centrar en el eje horizontal */
+  justify-content: center; /* Centrar en el eje vertical */
+}
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.lineaCeleste {
+  border: 3px solid rgb(103, 195, 222);
+  width: 10%;
+  opacity: 1;
+  margin: 1rem auto 1rem auto;
+}
+ul {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  cursor: pointer;
+}
