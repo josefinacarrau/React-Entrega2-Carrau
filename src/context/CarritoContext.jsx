@@ -13,8 +13,8 @@ export const CarritoProvider = ({ children }) => {
 
   // Steps for testing purposes to check if it updates correctly
   console.log(carrito);
-  console.log("Monto total de la compra: ", total);
-  console.log("Cantidad de item: ", cantidadTotal);
+  //console.log("Monto total de la compra: ", total);
+  //console.log("Cantidad de item: ", cantidadTotal);
 
   const agregarAlCarrito = (item, cantidad) => {
     const productoExistente = carrito.find((prod) => prod.item.id === item.id);

@@ -7,7 +7,7 @@ import { useState } from "react";
 const ItemCount = ({ inicial, stock, funcionAgregar }) => {
   const [contador, setContador] = useState(1);
 
-  //2)useState me retorna un array con dos elementos. El primero es el estado y el segundo es es una función que me actualiza el valor de ese estado.
+  //2)useState me retorna un array con dos elementos. El primero es el estado y el segundo es es una función que me actualiza el valor de ese estado
 
   //3) Crear las funciones para incrementar y decrementar el contador.
 
@@ -24,15 +24,16 @@ const ItemCount = ({ inicial, stock, funcionAgregar }) => {
   };
 
   return (
-    <div>
-      <button onClick={decrementar}> - </button>
-      <p> {contador} </p>
-      <button onClick={incrementar}> + </button>
-      <br />{" "}
-      <button className="boton" onClick={() => funcionAgregar(contador)}>
+    <>
+      <div className="inline">
+        <button onClick={decrementar}> - </button>
+        <p> {contador} </p>
+        <button onClick={incrementar}> + </button>
+      </div>
+      <button onClick={() => funcionAgregar(contador)}>
         Agregar al carrito
       </button>
-    </div>
+    </>
   );
 };
 

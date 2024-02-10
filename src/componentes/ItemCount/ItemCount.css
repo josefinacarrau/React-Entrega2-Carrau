@@ -3,16 +3,17 @@ button {
     border-radius: 0.5rem;
     padding: 5px 10px;
     margin: 10px;
+    align-items: center;
 }
 
 p{
-    display: inline;
+    display: grid;
+  place-items: center;
+  margin: auto 0;
 }
-/* 
-.boton{
+
+.inline {
     display: flex;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    align-self: center;
-} */
+     margin: auto !important; /*POrque me toma el esttilo de reboot.scss como mas importante que el mio?? */
+     align-items: center;
+}

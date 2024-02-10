@@ -2,20 +2,24 @@ import CartItem from "../CartItem/CartItem";
 import { Link } from "react-router-dom";
 import { CarritoContext } from "../../context/CarritoContext";
 import { useContext } from "react";
+import Swal from "sweetalert2";
 
 const Cart = () => {
   const { carrito, vaciarCarrito, total, cantidadTotal } =
     useContext(CarritoContext);
 
   //Tecnica de renderizado condicional.
-
   if (cantidadTotal === 0) {
-    return (
-      <>
-        <h2>No Hay productos en el carrito! </h2> //Buscar Sweet Alert
-        <Link to="/">Ver Productos</Link>
-      </>
-    );
+    // Mostrar SweetAlert si el carrito está vacío
+    Swal.fire({
+      title: "Error!",
+      text: "No hay productos seleccionados",
+      icon: "error",
+      confirmButtonText: "OK",
+    });
+
+    // No necesitas devolver nada aquí si el carrito está vacío
+    return <Link to="/">Ver Productos</Link>;
   }
 
   return (
