@@ -8,8 +8,9 @@
 }
 
 .imgProducto {
-  height: auto;
-  width: auto;
+  height: 150px;
+  width: fit-content;
+  align-self: center;
 }
 
 .btnCarrito {

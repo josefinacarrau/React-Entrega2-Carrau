@@ -11,7 +11,8 @@
 
 .imgProducto {
   height: 150px;
-  width: auto;
+  width: fit-content;
+  align-self: 	center;
 }
 
 h3 {
