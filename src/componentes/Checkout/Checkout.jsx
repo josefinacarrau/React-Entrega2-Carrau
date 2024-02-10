@@ -102,7 +102,7 @@ const Checkout = () => {
             <p>
               {producto.item.titulo} x {producto.cantidad}
             </p>
-            <p>{producto.item.precio}</p>
+            <p>${producto.item.precio}</p>
             <hr />
           </div>
         ))}

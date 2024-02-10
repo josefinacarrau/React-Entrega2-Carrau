@@ -14,6 +14,6 @@ p{
 
 .inline {
     display: flex;
-     margin: auto !important; /*POrque me toma el esttilo de reboot.scss como mas importante que el mio?? */
+     margin: auto !important; 
      align-items: center;
 }
