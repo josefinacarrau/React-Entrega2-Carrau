@@ -29,7 +29,7 @@ const CartItem = ({ item, cantidad }) => {
             </td>
             <td>
             <label htmlFor="">Precio Unitario:</label>
-              <p>{item.precio}</p>
+              <p> ${item.precio}</p>
             </td>
           </tr>
         </tbody>

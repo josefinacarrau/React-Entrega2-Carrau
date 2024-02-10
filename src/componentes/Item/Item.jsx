@@ -22,7 +22,7 @@ const Item = ({ id, titulo, precio, imagen }) => {
             <Card.Body>
               <Card.Title>{titulo}</Card.Title>
               <Card.Text>
-                Precio: {precio}
+                Precio: ${precio}
               </Card.Text>
               <Link to={`/item/${id}`}>
                 <Button variant="info" className="btnCarrito">

@@ -22,7 +22,7 @@ const ItemDetail = ({ id, titulo, precio, imagen, stock }) => {
     <div className="cardProductos">
       <h3>{titulo} </h3>
       <img src={imagen} alt={titulo} className="imgProducto" />
-      <h4>Precio: {precio} </h4>
+      <h4>Precio: ${precio} </h4>
       {/*       <h5>ID: {id} </h5> */}
       <p>
         Some quick example text to build on the card title and make up the bulk
