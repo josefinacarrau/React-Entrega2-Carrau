@@ -12,7 +12,7 @@ const Cart = () => {
   if (cantidadTotal === 0) {
     // Mostrar SweetAlert si el carrito está vacío
     Swal.fire({
-      title: "Error!",
+      title: "Carrito vacío!",
       text: "No hay productos seleccionados",
       icon: "error",
       confirmButtonText: "OK",
@@ -25,11 +25,11 @@ const Cart = () => {
   return (
     <div>
       {carrito.map((prod) => (
-        <CartItem key={prod.id} {...prod} />
+        <CartItem imagen={prod.imagen} key={prod.id} {...prod} />
       ))}
       <h3>Total $: {total}</h3>
       <button onClick={() => vaciarCarrito()}>Vaciar carrito</button>
-      <Link to="/checkout">Finalizar compra</Link>
+      <Link to="/checkout"><button>Finalizar compra</button></Link>
     </div>
   );
 };

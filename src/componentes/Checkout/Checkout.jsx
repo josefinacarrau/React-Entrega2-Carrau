@@ -23,13 +23,13 @@ const Checkout = () => {
 
         //Verificamos que todos los campos se completen: 
         if (!nombre || !apellido || !telefono || !email || !emailConfirmacion) {
-            setError("¡Por favor completa todos los campos o moriremos!");
+            setError("¡Por favor completa todos los campos!");
             return;
         }
 
         //Validamos que el email coincida: 
         if (email !== emailConfirmacion) {
-            setError("Los emails no coinciden, rata de dos patas!");
+            setError("Los emails no coinciden");
             return;
         }
 
@@ -37,7 +37,7 @@ const Checkout = () => {
         const orden = {
             items: carrito.map(producto => ({
                 id: producto.item.id,
-                nombre: producto.item.nombre,
+                nombre: producto.item.titulo,
                 cantidad: producto.cantidad
             })),
             total: total,
@@ -48,6 +48,7 @@ const Checkout = () => {
             email
         }
 
+        console.log(orden);
         //Guardamos la orden de compras en la base de datos: 
         addDoc(collection(db, "ordenes"), orden)
             .then(docRef => {
@@ -56,7 +57,7 @@ const Checkout = () => {
             })
             .catch(error => {
                 console.log("Error al crear la orden compra", error);
-                setError("No se pudo crear la orden, revisa tu codigo maldito");
+                setError("No se pudo crear la orden");
             })
     }
 
@@ -68,7 +69,7 @@ const Checkout = () => {
                 {
                     carrito.map(producto => (
                         <div key={producto.item.id}>
-                            <p> {producto.item.nombre} x {producto.cantidad} </p>
+                            <p> {producto.item.titulo} x {producto.cantidad} </p>
                             <p> {producto.item.precio} </p>
                             <hr />
                         </div>
