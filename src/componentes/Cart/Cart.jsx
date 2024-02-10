@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CarritoContext } from "../../context/CarritoContext";
 import { useContext } from "react";
 import Swal from "sweetalert2";
+import "./Cart.css";
 
 const Cart = () => {
   const { carrito, vaciarCarrito, total, cantidadTotal } =
@@ -19,17 +20,25 @@ const Cart = () => {
     });
 
     // No necesitas devolver nada aquí si el carrito está vacío
-    return <Link to="/">Ver Productos</Link>;
+    return (
+      <div className="centrar">
+        <button>
+          <Link to="/">Volver al inicio </Link>{" "}
+        </button>
+      </div>
+    );
   }
 
   return (
-    <div>
+    <div className="centrar">
       {carrito.map((prod) => (
-        <CartItem imagen={prod.imagen} key={prod.id} {...prod} />
+        <CartItem key={prod.id} {...prod} />
       ))}
       <h3>Total $: {total}</h3>
       <button onClick={() => vaciarCarrito()}>Vaciar carrito</button>
-      <Link to="/checkout"><button>Finalizar compra</button></Link>
+      <Link to="/checkout">
+        <button>Finalizar compra</button>
+      </Link>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import {getFirestore} from "firebase/firestore"; //Me permite obtener una instac
 // Your web app's Firebase configuration
 //INFORMACION SENSIBLE, EN ESPECIAL LA APIKEY
 const firebaseConfig = {
-  apiKey: "AIzaSyBjKWC8yw_Lgb0K0SsaqwZJZTnT4Gr8RmQ",
+  apiKey: import.meta.env.VITE_API_KEY_FIREBASE_CONFIG,
   authDomain: "cimarronas-masterclass.firebaseapp.com",
   projectId: "cimarronas-masterclass",
   storageBucket: "cimarronas-masterclass.appspot.com",
