@@ -9,6 +9,7 @@ const productos = [
     precio: 650,
     cantidad: 1,
     idCat: "1",
+    stock: 300
   },
   {
     id: "2",
@@ -17,6 +18,7 @@ const productos = [
     precio: 650,
     cantidad: 1,
     idCat: "1",
+    stock:300
   },
   {
     id: "3",
@@ -25,6 +27,7 @@ const productos = [
     precio: 650,
     cantidad: 1,
     idCat: "1",
+    stock:300
   },
   {
     id: "4",
@@ -33,6 +36,7 @@ const productos = [
     precio: 650,
     cantidad: 1,
     idCat: "1",
+    stock:300
   },
   {
     id: "5",
@@ -41,6 +45,7 @@ const productos = [
     precio: 190,
     cantidad: 1,
     idCat: "2",
+    stock:300
   },
   {
     id: "6",
@@ -49,6 +54,7 @@ const productos = [
     precio: 650,
     cantidad: 1,
     idCat: "1",
+    stock:300
   },
   {
     id: "7",
@@ -57,6 +63,7 @@ const productos = [
     precio: 650,
     cantidad: 1,
     idCat: "1",
+    stock:300
   },
   {
     id: "8",
@@ -65,6 +72,7 @@ const productos = [
     precio: 650,
     cantidad: 1,
     idCat: "1",
+    stock:300
   },
   {
     id: "9",
@@ -73,6 +81,7 @@ const productos = [
     precio: 300,
     cantidad: 1,
     idCat: "3",
+    stock:300
   },
   {
     id: "10",
@@ -81,6 +90,7 @@ const productos = [
     precio: 690,
     cantidad: 1,
     idCat: "2",
+    stock:300
   },
   {
     id: "11",
@@ -89,6 +99,7 @@ const productos = [
     precio: 690,
     cantidad: 1,
     idCat: "2",
+    stock:300
   },
   {
     id: "12",
@@ -97,6 +108,7 @@ const productos = [
     precio: 690,
     cantidad: 1,
     idCat: "2",
+    stock:300
   },
   {
     id: "13",
@@ -105,6 +117,7 @@ const productos = [
     precio: 250,
     cantidad: 1,
     idCat: "3",
+    stock:300
   },
   {
     id: "14",
@@ -113,6 +126,7 @@ const productos = [
     precio: 200,
     cantidad: 1,
     idCat: "2",
+    stock:300
   },
   {
     id: "15",
@@ -121,6 +135,7 @@ const productos = [
     precio: 1690,
     cantidad: 1,
     idCat: "3",
+    stock:300
   },
 ];
 
