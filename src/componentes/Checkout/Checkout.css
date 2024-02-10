@@ -1,0 +1,26 @@
+h2{
+    text-align: center;
+    color: rgb(103, 195, 222);
+    margin-top: 10px;
+}
+
+form  {
+    text-align: center;
+}
+
+labelCheck{
+    width: 120px; /* Ancho fijo para los labels */
+    text-align: right; /* Alineación a la derecha */
+    margin-right: 10px; /* Espacio entre el label y el input */}
+
+input {
+    margin-bottom: 10px;
+}
+
+.borderBox{
+    border: 2px solid rgb(103, 195, 222);
+    border-radius: 1rem;
+    padding: 15px;
+    width: fit-content;
+    margin: auto;
+}

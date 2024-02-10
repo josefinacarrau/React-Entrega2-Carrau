@@ -1,0 +1,44 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  height: 3rem;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Establecer el ancho de todas las celdas de la primera columna */
+.cart-item td:nth-child(1) {
+  width: 80px; /* Ancho deseado para la primera columna */
+}
+
+/* Establecer el ancho de todas las celdas de la segunda columna */
+.cart-item td:nth-child(2) {
+  width: 300px; /* Ancho deseado para la segunda columna */
+}
+
+/* Establecer el ancho de todas las celdas de la tercera columna */
+.cart-item td:nth-child(3) {
+  width: 100px; /* Ancho deseado para la tercera columna */
+}
+
+/* Establecer el ancho de todas las celdas de la cuarta columna */
+.cart-item td:nth-child(4) {
+  width: 120px; /* Ancho deseado para la cuarta columna */
+}
+
+label {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+ text-align: center;
+}

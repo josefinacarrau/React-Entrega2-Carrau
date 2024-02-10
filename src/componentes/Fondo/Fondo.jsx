@@ -6,7 +6,7 @@ const Fondo = () => {
     <div>
       <section className="background-image">
         <div className="text-box">
-          <h1>CARRITO DE COMPRAS</h1>
+          <h1>PRODUCTOS</h1>
         </div>
       </section>
       <hr className="lineaCeleste" />
