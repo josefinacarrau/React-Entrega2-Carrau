@@ -1,21 +1,21 @@
-import { useState } from "react";
+import { useState } from "react"; //Importo Hook
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 import { CarritoContext } from "../../context/CarritoContext";
-import { useContext } from "react";
+import { useContext } from "react"; //Importo el Hook
 import "./ItemDetail.css";
 
 const ItemDetail = ({ id, titulo, precio, imagen, stock }) => {
 //Creamos un estado local, con la cantidad de productos agregados.
   const [agregarCantidad, setAgregarCantidad] = useState(0);
-  const { agregarALcarrito } = useContext(CarritoContext);
+  const { agregarAlCarrito } = useContext(CarritoContext);
 
   //Creamos una funcion manejadora de la cantidad
   const manejadorCantidad = (cantidad) => {
     setAgregarCantidad(cantidad);
 
-    const item = { id, nombre, precio };
-    agregarALcarrito(item, cantidad);
+    const item = { id, titulo, precio };
+    agregarAlCarrito(item, cantidad);
   };
 
   return (

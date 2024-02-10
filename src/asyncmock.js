@@ -1,11 +1,11 @@
-const productos = [
+/* const productos = [
   {
     id: "1",
-    titulo: "Grip",
-    imagen: "../img/GripVerde.jpg",
+    titulo: "Grip Verde",
+    imagen: "../img/GripVerde.jpg" ,
     /* "Rojo": "../img/GripRojo.jpg",
             "Azul": "../img/GripAzul.jpg",
-            "Amarillo": "../img/GripAmarillo.jpg" */
+            "Amarillo": "../img/GripAmarillo.jpg"
     precio: 650,
     cantidad: 1,
     idCat: "1",
@@ -13,7 +13,7 @@ const productos = [
   },
   {
     id: "2",
-    titulo: "Grip",
+    titulo: "Grip Rojo",
     imagen: "../img/GripRojo.jpg",
     precio: 650,
     cantidad: 1,
@@ -22,7 +22,7 @@ const productos = [
   },
   {
     id: "3",
-    titulo: "Grip",
+    titulo: "Grip Azul",
     imagen: "../img/GripAzul.jpg",
     precio: 650,
     cantidad: 1,
@@ -31,7 +31,7 @@ const productos = [
   },
   {
     id: "4",
-    titulo: "Grip",
+    titulo: "Grip Amarillo",
     imagen: "../img/GripAmarillo.jpg",
     precio: 650,
     cantidad: 1,
@@ -49,7 +49,7 @@ const productos = [
   },
   {
     id: "6",
-    titulo: "Guante",
+    titulo: "Guante Aqua",
     imagen: "../img/GuanteAqua.jpg",
     precio: 650,
     cantidad: 1,
@@ -58,7 +58,7 @@ const productos = [
   },
   {
     id: "7",
-    titulo: "Guante",
+    titulo: "Guante Fucsia",
     imagen: "../img/GuanteFucsia.jpg",
     precio: 650,
     cantidad: 1,
@@ -67,7 +67,7 @@ const productos = [
   },
   {
     id: "8",
-    titulo: "Guante",
+    titulo: "Guante Negro",
     imagen: "../img/GuanteNegro.jpg",
     precio: 650,
     cantidad: 1,
@@ -85,7 +85,7 @@ const productos = [
   },
   {
     id: "10",
-    titulo: "Tabla Entrenador",
+    titulo: "Tabla Entrenador Verde",
     imagen: "../img/TablaEntrenadorVerde.jpg",
     precio: 690,
     cantidad: 1,
@@ -94,7 +94,7 @@ const productos = [
   },
   {
     id: "11",
-    titulo: "Tabla Entrenador",
+    titulo: "Tabla Entrenador Fucsia",
     imagen: "../img/TablaEntrenadorFucsia.jpg",
     precio: 690,
     cantidad: 1,
@@ -103,7 +103,7 @@ const productos = [
   },
   {
     id: "12",
-    titulo: "Tabla Entrenador",
+    titulo: "Tabla Entrenador Blanca",
     imagen: "../img/TablaEntrenadorBlanca.jpg",
     precio: 690,
     cantidad: 1,
@@ -170,3 +170,4 @@ export const getProductosPorCategoria = (idCategoria) => {
     }, 100);
   });
 };
+ */

@@ -1,5 +1,5 @@
 import {useEffect} from 'react';
-import {db} from "../../services/config";
+import {db} from "../../../services/config";
 import { collection, doc, setDoc} from "firebase/firestore";
 
 const CargarArray = () => {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 //Importamos nuestra conexion a la base "bd"
-import { db } from "../../services/config";
+import { db } from "../../../services/config";
 
 // Importamos las funciones de Firebase que vamos  usar:
 import { getDocs, collection, query, where, doc, updateDoc } from "firebase/firestore";

@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button";
 
 const Item = ({ id, titulo, precio, imagen }) => {
   return (
+    <>
     <Row md={1} className="g-4">
       {Array.from({ length: 1 }).map((_, idx) => (
         <Col key={idx}>
@@ -21,7 +22,7 @@ const Item = ({ id, titulo, precio, imagen }) => {
             <Card.Body>
               <Card.Title>{titulo}</Card.Title>
               <Card.Text>
-                <p>Precio: {precio}</p>
+                Precio: {precio}
               </Card.Text>
               <Link to={`/item/${id}`}>
                 <Button variant="info" className="btnCarrito">
@@ -33,6 +34,7 @@ const Item = ({ id, titulo, precio, imagen }) => {
         </Col>
       ))}
     </Row>
+    </>
   );
 };
 

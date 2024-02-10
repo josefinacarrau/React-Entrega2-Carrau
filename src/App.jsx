@@ -6,6 +6,7 @@ import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailCon
 import { CarritoProvider } from "./context/CarritoContext";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cart from "./componentes/Cart/Cart";
+import Checkout from "./componentes/Checkout/Checkout";
 
 import "./style.css";
 
@@ -19,11 +20,6 @@ import "./style.css";
 const App = () => {
   return (
     <>
-      {/* <Loader/>
-    <LoaderApi/> */}
-      {/* <Productos />
-      <Formulario /> 
-      <CargarJson/> */}
 <BrowserRouter>
         <CarritoProvider>
           <NavBar />
@@ -36,6 +32,7 @@ const App = () => {
             />
             <Route path="/item/:idItem" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </CarritoProvider>
       </BrowserRouter> 

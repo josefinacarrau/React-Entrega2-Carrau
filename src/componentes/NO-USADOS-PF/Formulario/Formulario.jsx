@@ -1,5 +1,5 @@
 import { useState } from "recat";
-import { db } from "../../services/config";
+import { db } from "../../../services/config";
 import { collection, addDoc } from "firebase/firestore";
 
 const Formulario = () => {
