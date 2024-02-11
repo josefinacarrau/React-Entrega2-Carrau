@@ -10,13 +10,6 @@ import Checkout from "./componentes/Checkout/Checkout";
 
 import "./style.css";
 
-//import Loader from "./componentes/Loader/Loader";
-//import LoaderApi from "./componentes/LoaderApi/LoaderApi";
-//import Formulario from "./componentes/Formulario/Formulario";
-//import Productos from "./componentes/Productos/Productos";
-//import CargarArray from "./componentes/CargarArray/CargarArray";
-//import CargarJson from "./componentes/CargarJson/CargarJson";
-
 const App = () => {
   return (
     <>

@@ -34,11 +34,6 @@ const CartItem = ({ item, cantidad }) => {
           </tr>
         </tbody>
       </table>
-
-      {/*       <h3>{item.titulo}</h3>
-      <img src={item.imagen} alt={item.titulo} />
-      <p>Cantidad: {cantidad} </p>
-      <p>Precio: {item.precio}</p> */}
     </div>
   );
 };

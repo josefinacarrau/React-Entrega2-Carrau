@@ -1,14 +1,11 @@
 //Importamos dos funciones del modulo Firebase:
 
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 // 1) initializeApp me permite iniciar la conexion con Firebase
 
 import {getFirestore} from "firebase/firestore";
 //2) Me permite obtener una instacia del Firestore
 
-// Your web app's Firebase configuration
 // Objeto con nuestra informacion de la cuenta.
 // Incluye la KEY personal para la base de datos : apiKey
 const firebaseConfig = {

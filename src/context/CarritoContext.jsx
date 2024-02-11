@@ -11,17 +11,12 @@ export const CarritoProvider = ({ children }) => {
   const [total, setTotal] = useState(0);
   const [cantidadTotal, setCantidadTotal] = useState(0);
 
-  // Steps for testing purposes to check if it updates correctly
- //console.log(carrito);
-  //console.log("Monto total de la compra: ", total);
-  //console.log("Cantidad de item: ", cantidadTotal);
-
   const agregarAlCarrito = (item, cantidad) => {
     const productoExistente = carrito.find((prod) => prod.item.id === item.id);
     if (!productoExistente) {
       setCarrito(prev => [...prev, { item, cantidad }]);
       setCantidadTotal(prev => prev + cantidad);
-      setTotal(prev => prev + (item.precio * cantidad));             /*La sintaxis: prev => [...prev, {item, cantidad}] se utiliza para crear un nuevo array a partir del estado anterior del carrito (prev) y agregar un nuevo objeto, que representa el nuevo producto.*/
+      setTotal(prev => prev + (item.precio * cantidad));  /*La sintaxis: prev => [...prev, {item, cantidad}] se utiliza para crear un nuevo array a partir del estado anterior del carrito (prev) y agregar un nuevo objeto, que representa el nuevo producto.*/
     } else {
       const carritoActualizado = carrito.map(prod=> {
         if (prod.item.id === item.id) {
